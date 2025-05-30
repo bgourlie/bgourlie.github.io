@@ -1,23 +1,26 @@
----
-layout: default
----
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Website</title>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to My Website</h1>
+        </header>
 
-<div class="home">
+        <main>
+            <section>
+                <h2>About This Site</h2>
+                <p>
+                    This is a simple starter website hosted with GitHub Pages.
+                </p>
+            </section>
+        </main>
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+        <footer>
+            <p>&copy; 2025 W. Brian Gourlie</p>
+        </footer>
+    </body>
+</html>
